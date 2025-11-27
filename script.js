@@ -102,4 +102,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    // Show More Research
+    const showMoreResearchBtn = document.getElementById('show-more-research-btn');
+    const detailedResearch = document.getElementById('detailed-research');
+
+    if (showMoreResearchBtn && detailedResearch) {
+        showMoreResearchBtn.addEventListener('click', () => {
+            if (detailedResearch.style.display === 'none') {
+                detailedResearch.style.display = 'block';
+                showMoreResearchBtn.innerHTML = 'Show Less Research <i class="fas fa-chevron-up"></i>';
+                // Optional: Scroll to the detailed section
+                detailedResearch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                detailedResearch.style.display = 'none';
+                showMoreResearchBtn.innerHTML = 'Show More Research <i class="fas fa-chevron-down"></i>';
+                // Optional: Scroll back to the button or top of research section
+                document.getElementById('research').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
 });

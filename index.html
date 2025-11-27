@@ -60,25 +60,11 @@
             <h2 class="section-title">About the Lab</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>Led by Research Assistant Professor Seong-Yong Cheon, our lab is part of the Department of
-                        Architectural Engineering at Hanyang University.</p>
-                    <p>We focus on solving critical challenges in building energy efficiency and indoor environmental
-                        quality. Our research spans liquid desiccant dehumidifiers, membrane technologies, and dedicated
-                        outdoor air systems (DOAS).</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>400+</h3>
-                        <p>Citations</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>5+</h3>
-                        <p>Key Areas</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Active</h3>
-                        <p>Research</p>
-                    </div>
+                    <p>We address emerging global challenges at the intersection of energy consumption, humidity
+                        control, and indoor air quality. Our lab develops non-refrigerant HVAC technologies,
+                        high-efficiency membrane systems, and climate-adaptive building strategies that reduce energy
+                        demand and enhance environmental health. Through system-level innovation, we aim to contribute
+                        to the transition toward sustainable, low-carbon built environments.</p>
                 </div>
             </div>
         </div>
@@ -88,25 +74,145 @@
     <section id="research" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Research Areas</h2>
+
+            <!-- Summary Cards -->
             <div class="cards-grid">
+                <!-- HVAC Systems -->
                 <div class="card">
                     <i class="fas fa-wind card-icon"></i>
                     <h3>HVAC Systems</h3>
-                    <p>Advanced analysis and optimization of Heating, Ventilation, and Air Conditioning systems for
-                        modern buildings.</p>
+                    <div class="card-content">
+                        <p>Advanced analysis and optimization of Heating, Ventilation, and Air Conditioning systems for
+                            modern buildings.</p>
+                    </div>
                 </div>
+
+                <!-- Building Energy -->
                 <div class="card">
                     <i class="fas fa-leaf card-icon"></i>
                     <h3>Building Energy</h3>
-                    <p>Strategies for reducing energy consumption in buildings through innovative technologies and
-                        system integration.</p>
+                    <div class="card-content">
+                        <p>Strategies for reducing energy consumption in buildings through innovative technologies and
+                            system integration.</p>
+                    </div>
                 </div>
+
+                <!-- Dehumidification -->
                 <div class="card">
                     <i class="fas fa-tint card-icon"></i>
                     <h3>Dehumidification</h3>
-                    <p>Research on liquid desiccant and vacuum-based membrane dehumidifiers for efficient humidity
-                        control.</p>
+                    <div class="card-content">
+                        <p>Research on liquid desiccant and vacuum-based membrane dehumidifiers for efficient humidity
+                            control.</p>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Show More Button -->
+            <div class="show-more-container" style="margin-top: 40px; text-align: center;">
+                <button id="show-more-research-btn" class="btn btn-primary">Show More Research <i
+                        class="fas fa-chevron-down"></i></button>
+            </div>
+
+            <!-- Detailed Research Areas (Hidden) -->
+            <div id="detailed-research" class="detailed-research" style="display: none;">
+
+                <!-- Membrane -->
+                <div class="detailed-item">
+                    <div class="detailed-img">
+                        <img src="images/Membrane.png" alt="Membrane-Based Dehumidification">
+                    </div>
+                    <div class="detailed-text">
+                        <h3>Membrane-Based Dehumidification Systems</h3>
+                        <p>Membrane-based dehumidification technologies represent one of our lab’s core research
+                            directions, aiming to establish high-efficiency and non-refrigerant moisture control
+                            solutions for future HVAC systems. As global humidity levels rise and latent loads become
+                            increasingly dominant in buildings, traditional cooling-based dehumidification approaches
+                            suffer from excessive energy use, deep overcooling, and reheat penalties. To overcome these
+                            limitations, our research focuses on selective vapor transport across engineered membranes
+                            that allow water vapor to permeate while blocking air and liquid water. We develop and
+                            analyze several membrane-driven platforms, including vacuum membrane dehumidification (VMD),
+                            cyclic membrane humidity pump systems, and membrane-enhanced DOAS configurations. These
+                            systems leverage pressure or concentration gradients as driving forces, minimizing exergy
+                            loss and eliminating the need for refrigerants. Beyond energy efficiency, membrane
+                            dehumidifiers inherently improve hygienic performance by preventing air–water contact,
+                            thereby reducing microbial transfer risks. Through experiments, theoretical modeling, and
+                            system-level integration studies, we work toward scalable membrane-based humidity control
+                            technologies that align with the demands of climate-adaptive and low-carbon buildings.</p>
+                    </div>
+                </div>
+
+                <!-- Liquid Desiccant -->
+                <div class="detailed-item">
+                    <div class="detailed-img">
+                        <img src="images/liquid desiccant.jpg" alt="Liquid Desiccant HVAC">
+                    </div>
+                    <div class="detailed-text">
+                        <h3>Liquid Desiccant Air-Conditioning Systems</h3>
+                        <p>Liquid desiccant (LD) technologies offer an alternative pathway for latent load management
+                            using hygroscopic solutions that can absorb moisture efficiently at relatively low
+                            temperatures. However, their practical implementation is challenged by solution heating,
+                            thermodynamic inefficiencies, and sensitivity to operating conditions. Our lab conducts
+                            comprehensive investigations into the heat and mass transfer characteristics of LD systems,
+                            including ideal cycle analysis, packed-bed and membrane-type contactor design, and
+                            regeneration strategies coupled with heat recovery. We develop experimental platforms that
+                            allow for precise measurement of water vapor absorption, solution concentration changes, and
+                            thermal performance. By clarifying the mechanisms that limit LD performance and by
+                            optimizing flow configurations, heat exchange structures, and operating parameters, our
+                            research aims to unlock the potential of LD systems as stable and high-performance
+                            components of next-generation HVAC architectures. These advancements also provide strong
+                            foundations for hybrid membrane–LD systems, further enhancing overall system flexibility and
+                            energy efficiency.</p>
+                    </div>
+                </div>
+
+                <!-- Thermoelectric -->
+                <div class="detailed-item">
+                    <div class="detailed-img">
+                        <img src="images/Thermoelectric.jpg" alt="Thermoelectric Energy Harvesting">
+                    </div>
+                    <div class="detailed-text">
+                        <h3>Thermoelectric Energy Harvesting Systems</h3>
+                        <p>Building environments contain significant amounts of low-grade waste heat—distributed across
+                            HVAC ducts, piping networks, facades, and indoor–outdoor surfaces—yet this energy is rarely
+                            utilized. Our research on thermoelectric energy harvesting explores the conversion of small
+                            temperature gradients into usable electrical power through solid-state thermoelectric
+                            generators (TEGs). We design compact and durable TEG modules tailored to building
+                            applications, incorporating airflow-assisted cooling, heat spreading structures, and
+                            optimized thermal interfaces to enhance power output. These systems enable self-powered
+                            operation of distributed sensors, environmental monitoring devices, and micro-scale
+                            controllers, supporting the development of energy-autonomous building systems. By
+                            characterizing the thermodynamic behavior of TEG devices in realistic HVAC and building
+                            conditions, we aim to transform unused thermal losses into functional energy sources,
+                            improving resilience, reducing wiring needs, and contributing to integrated smart-building
+                            ecosystems.</p>
+                    </div>
+                </div>
+
+                <!-- IEQ -->
+                <div class="detailed-item">
+                    <div class="detailed-img">
+                        <img src="images/Indoor air quality.png" alt="Indoor Environmental Quality">
+                    </div>
+                    <div class="detailed-text">
+                        <h3>Indoor Environmental Quality: Thermal Comfort and Air Quality</h3>
+                        <p>Ensuring healthy and comfortable indoor environments is essential as buildings pursue deeper
+                            energy savings and adapt to fluctuating climate conditions. Our lab evaluates indoor
+                            environmental quality (IEQ) by integrating thermal comfort assessment, indoor air quality
+                            (IAQ) measurement, and exposure-based risk evaluation for emerging HVAC technologies. We
+                            analyze how temperature, humidity, airflow, contaminants, and building operation strategies
+                            influence human comfort and well-being. In particular, we investigate the hygienic
+                            performance of humidification and dehumidification systems by studying microbial transfer,
+                            aerosol pathways, and air–water interaction risks. Membrane-based humidifiers and
+                            dehumidifiers, which prevent direct contact between water and air streams, are examined for
+                            their potential to eliminate cross-contamination issues and maintain safer indoor
+                            conditions. Through quantitative comfort modeling, IAQ monitoring, and coupled HVAC–occupant
+                            interaction studies, our research contributes evidence-based insights into how innovative
+                            environmental control technologies can deliver both energy efficiency and enhanced indoor
+                            health.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -143,410 +249,116 @@
                         <div class="pub-year">2024</div>
                         <div class="pub-content">
                             <h4>Applicability of a dedicated outdoor air system assisted by isothermal dehumidification
-                                and evaporative cooling</h4>
+                                with membrane heat exchanger for residential buildings</h4>
+                            <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
+                            <p class="venue">Energy and Buildings 324, 114842</p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-content">
+                            <h4>Energy saving potential of liquid desiccant-assisted dedicated outdoor air system for
+                                greenhouse application</h4>
                             <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
-                            <p class="venue">Journal of Building Engineering 82, 108169</p>
+                            <p class="venue">Energy 309, 133069</p>
                         </div>
                     </div>
                     <div class="pub-item">
                         <div class="pub-year">2024</div>
                         <div class="pub-content">
-                            <h4>Energy saving of vacuum-based membrane dehumidification with indirect evaporative
-                                cooling in a low sensible-heat-ratio building</h4>
-                            <p class="authors">SH Park, SY Cheon, HJ Cho, JW Jeong</p>
-                            <p class="venue">Journal of Building Engineering 96, 110490</p>
+                            <h4>Performance improvement of thermoelectric generator-assisted dedicated outdoor air
+                                system using an evaporative cooler</h4>
+                            <p class="authors">DH Kim, SY Cheon, JW Jeong</p>
+                            <p class="venue">Energy 307, 132646</p>
                         </div>
                     </div>
-                    <div class="pub-item">
-                        <div class="pub-year">2024</div>
-                        <div class="pub-content">
-                            <h4>Experimental analysis of vacuum membrane dehumidifier: Hollow fiber module designs and
-                                dehumidification performance</h4>
-                            <p class="authors">HJ Cho, SY Cheon, JW Jeong, G Yoon</p>
-                            <p class="venue">Applied Thermal Engineering 236, 121848</p>
-                        </div>
-                    </div>
-
-                    <!-- Hidden Journals -->
-                    <div class="hidden-pubs" id="hidden-journals" style="display: none;">
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Energy saving potential of latent heat exchanger-integrated dual core energy
-                                    recovery ventilator</h4>
-                                <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 231, 120989</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Experimental analysis on energy recovery ventilator with latent heat exchanger using
-                                    hollow fiber membrane</h4>
-                                <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
-                                <p class="venue">Energy Conversion and Management 278, 116706</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Applicability of a liquid-desiccant air-conditioning system in energy-efficient
-                                    buildings with high latent load</h4>
-                                <p class="authors">JH Lee, SY Cheon, SJ Lee, HJ Cho, JW Jeong</p>
-                                <p class="venue">Journal of Building Engineering 78, 107608</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Multi-objective optimization for capacity matching and energy performance of
-                                    heat-pump-driven liquid-desiccant air-conditioning system</h4>
-                                <p class="authors">JH Lee, SY Cheon, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 229, 120615</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Impact of external electric resistance on the power generation in the thermoelectric
-                                    energy harvesting blocks</h4>
-                                <p class="authors">J Joung, SY Cheon, YK Kang, M Kim, J Park, JW Jeong</p>
-                                <p class="venue">Renewable Energy 212, 779-791</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Energy retrofit of public office building through liquid desiccant assisted
-                                    dedicated outdoor air system with fuel cell in Korea</h4>
-                                <p class="authors">H Lim, SY Cheon, HJ Cho, JW Jeong, Y Su</p>
-                                <p class="venue">Applied Thermal Engineering 230, 120870</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Experimental study of vacuum-based membrane dehumidifier for HVAC system: Parametric
-                                    analysis and dehumidification performance</h4>
-                                <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
-                                <p class="venue">Energy Conversion and Management 270, 116252</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Design of a thermoelectric generator-assisted energy harvesting block considering
-                                    melting temperature of phase change materials</h4>
-                                <p class="authors">J Ko, SY Cheon, YK Kang, JW Jeong</p>
-                                <p class="venue">Renewable Energy 193, 89-112</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Preliminary study on air-to-air latent heat exchanger fabricated using hollow fiber
-                                    composite membrane for air-conditioning applications</h4>
-                                <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
-                                <p class="venue">Energy conversion and management 251, 115000</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Simplified effectiveness and number of transfer unit model for a vacuum membrane
-                                    dehumidifier applied to air conditioning</h4>
-                                <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 210, 118404</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Development of empirical models to predict latent heat exchange performance for
-                                    hollow fiber membrane-based ventilation system</h4>
-                                <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 213, 118686</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2021</div>
-                            <div class="pub-content">
-                                <h4>Energy impact of vacuum-based membrane dehumidification in building air-conditioning
-                                    applications</h4>
-                                <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 182, 116094</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2021</div>
-                            <div class="pub-content">
-                                <h4>Energy saving potential of a vacuum-based membrane dehumidifier in a dedicated
-                                    outdoor air system</h4>
-                                <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
-                                <p class="venue">Energy Conversion and Management 227, 113618</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2021</div>
-                            <div class="pub-content">
-                                <h4>Phase-change material-integrated thermoelectric radiant panel: Experimental
-                                    performance analysis and system design</h4>
-                                <p class="authors">YK Kang, H Lim, SY Cheon, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 194, 117082</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>Experimental analysis of dehumidification performance of counter and cross-flow
-                                    liquid desiccant dehumidifiers</h4>
-                                <p class="authors">HJ Cho, SY Cheon, JW Jeong</p>
-                                <p class="venue">Applied Thermal Engineering 150, 210-223</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>Applicability of thermoelectric heat pump in a dedicated outdoor air system</h4>
-                                <p class="authors">SY Cheon, H Lim, JW Jeong</p>
-                                <p class="venue">Energy 173, 244-262</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2018</div>
-                            <div class="pub-content">
-                                <h4>Empirical analysis for the heat exchange effectiveness of a thermoelectric liquid
-                                    cooling and heating unit</h4>
-                                <p class="authors">H Lim, SY Cheon, JW Jeong</p>
-                                <p class="venue">Energies 11 (3), 580</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="show-more-container">
-                        <button id="show-more-journals-btn" class="btn btn-secondary">Show More Journals <i
-                                class="fas fa-chevron-down"></i></button>
-                    </div>
+                </div>
+                <div class="show-more-container">
+                    <button id="show-more-journals-btn" class="btn btn-secondary">Show More Journals <i
+                            class="fas fa-chevron-down"></i></button>
                 </div>
             </div>
 
-            <!-- Conference Papers -->
-            <div class="pub-category" style="margin-top: 50px;">
-                <h3><i class="fas fa-users"></i> Conference Papers</h3>
-                <div class="publication-list" id="conference-list">
+            <!-- Conference Proceedings -->
+            <div class="pub-category">
+                <h3><i class="fas fa-users"></i> Conference Proceedings</h3>
+                <div class="publication-list" id="conf-list">
                     <!-- Visible Conferences -->
                     <div class="pub-item">
                         <div class="pub-year">2024</div>
                         <div class="pub-content">
-                            <h4>Preliminary Test on Moisture Transfer of Flat Sheet Membrane-based Dehumidification
-                                System</h4>
-                            <p class="authors">HJ Cho, SY Cheon, SJ Lee, JW Jeong</p>
-                            <p class="venue"></p>
+                            <h4>Experimental analysis of dehumidification performance of vacuum membrane dehumidifier
+                                for dedicated outdoor air system</h4>
+                            <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
+                            <p class="venue">The 10th International Conference on Indoor Air Quality, Ventilation and
+                                Energy Conservation in Buildings (IAQVEC2024)</p>
                         </div>
                     </div>
                     <div class="pub-item">
                         <div class="pub-year">2024</div>
                         <div class="pub-content">
-                            <h4>Thermodynamic Analysis of Cascade Vacuum Pump Based Membrane Dehumidifier in Air
-                                Conditioning System</h4>
-                            <p class="authors">SY Cheon, HJ Cho, JH Lee, SH Park, JW Jeong</p>
-                            <p class="venue"></p>
+                            <h4>Operation energy simulation of liquid desiccant-assisted dedicated outdoor air system
+                                for greenhouse</h4>
+                            <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
+                            <p class="venue">The 13th International Conference on Sustainable Energy & Environmental
+                                Protection (SEEP2024)</p>
                         </div>
                     </div>
                     <div class="pub-item">
-                        <div class="pub-year">2023</div>
+                        <div class="pub-year">2024</div>
                         <div class="pub-content">
-                            <h4>Exergy analysis on the low flow rate of solution in the atomization-based liquid
-                                desiccant system</h4>
-                            <p class="authors">SJ Lee, SY Cheon, S Kim, TD Kwon, JW Jeong</p>
-                            <p class="venue">Journal of Physics: Conference Series 2600 (6), 062007</p>
+                            <h4>Performance evaluation of thermoelectric generator-assisted dedicated outdoor air system
+                                with evaporative cooler</h4>
+                            <p class="authors">DH Kim, SY Cheon, JW Jeong</p>
+                            <p class="venue">The 13th International Conference on Sustainable Energy & Environmental
+                                Protection (SEEP2024)</p>
                         </div>
                     </div>
                     <div class="pub-item">
-                        <div class="pub-year">2023</div>
+                        <div class="pub-year">2024</div>
                         <div class="pub-content">
-                            <h4>Design and energy performance of the heat pump-driven liquid desiccant system with an
-                                ultrasonic atomization</h4>
-                            <p class="authors">SJ Lee, SY Cheon, SY Jo, JW Joung, JW Jeong</p>
-                            <p class="venue">IEA</p>
+                            <h4>Performance evaluation of liquid desiccant-assisted dedicated outdoor air system for
+                                greenhouse</h4>
+                            <p class="authors">SY Cheon, HJ Cho, JW Jeong</p>
+                            <p class="venue">SAREK Summer Annual Conference</p>
                         </div>
                     </div>
                     <div class="pub-item">
-                        <div class="pub-year">2023</div>
+                        <div class="pub-year">2024</div>
                         <div class="pub-content">
-                            <h4>Theoretical analysis of membrane based liquid desiccant air conditioning system</h4>
-                            <p class="authors">SY Cheon, BJ Kim, JH Lee, M Kim, HL Park, JW Jeong</p>
-                            <p class="venue">IEA</p>
+                            <h4>Performance evaluation of thermoelectric generator-assisted dedicated outdoor air system
+                                with evaporative cooler</h4>
+                            <p class="authors">DH Kim, SY Cheon, JW Jeong</p>
+                            <p class="venue">SAREK Summer Annual Conference</p>
                         </div>
-                    </div>
-
-                    <!-- Hidden Conferences -->
-                    <div class="hidden-pubs" id="hidden-conferences" style="display: none;">
-                        <div class="pub-item">
-                            <div class="pub-year">2023</div>
-                            <div class="pub-content">
-                                <h4>Humidification Performance Evaluation of hollow-fiber membrane-based humidifier for
-                                    air-conditioning</h4>
-                                <p class="authors">SY Jo, SY Cheon, BJ Kim, TD Kwon, JW Jeong</p>
-                                <p class="venue">E3S Web of Conferences 396, 01099</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Experimental investigation on a packaged unit of membrane dehumidification-based
-                                    ventilation system</h4>
-                                <p class="authors">C Hye-Jin, J Su-Young, L Soo-Jin, L Gyu-Bae, J Jae-Weon</p>
-                                <p class="venue">CLIMA 2022 conference</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2022</div>
-                            <div class="pub-content">
-                                <h4>Performance Analysis of a Passive Mixing Strategy assisted Heat-Pump-driven
-                                    Liquid-Desiccant Air-Conditioning System</h4>
-                                <p class="authors">JH Lee, SY Cheon, M Kim, HL Park, JW Jeong</p>
-                                <p class="venue">E3S Web of Conferences 356, 1-4</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2021</div>
-                            <div class="pub-content">
-                                <h4>Phase-Change Material Design for Thermoelectric Generator-Assisted Building
-                                    Integrated Photovoltaic</h4>
-                                <p class="authors">J Ko, SY Cheon</p>
-                                <p class="venue">ASHRAE Transactions 127, 100-107</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2021</div>
-                            <div class="pub-content">
-                                <h4>Experimental Study on Dehumidification Performance of a Vacuum-Based Membrane
-                                    Dehumidifier</h4>
-                                <p class="authors">SY Cheon, SJ Lee, LH Lin</p>
-                                <p class="venue">ASHRAE Transactions 127, 457-465</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>A numerical model and validation of phase change material integrated thermoelectric
-                                    radiant cooling panel</h4>
-                                <p class="authors">H Lim, HJ Cho, SY Cheon, SJ Lee, JW Jeong</p>
-                                <p class="venue">EDP Sciences</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>Energy-saving potential of dedicated outdoor-air system assisted by vacuum-based
-                                    membrane dehumidifier</h4>
-                                <p class="authors">SY Cheon, SY Yoon, S Liu, JW Jeong</p>
-                                <p class="venue">E3S Web of Conferences 111, 01087</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>Energy-Harvesting Benefit of a Thermoelectric Generator for a Liquid Desiccant
-                                    System in an Organic Rankine Cycle</h4>
-                                <p class="authors">SY Yoon, JY Park, S Cheon, S Liu, JW Jeong</p>
-                                <p class="venue">Building Simulation Conference Proceedings-Proceedings of the 16th
-                                    IBPSA …</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>Energy Performance of Desiccant and Evaporative Cooling-assisted 100% Outdoor Air
-                                    System Combined with a Thermoelectric Module and Organic Rankine Cycle</h4>
-                                <p class="authors">SY Yoon, JY Park, S Cheon, S Liu, JW Jeong</p>
-                                <p class="venue">Building Simulation 2019 16, 3963-3967</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2019</div>
-                            <div class="pub-content">
-                                <h4>Numerical Study of Heat Transfer in an Air-to-Air Heat Exchanger Integrated with a
-                                    Thermoelectric Heat Pump</h4>
-                                <p class="authors">SY Cheon, HW Dong, YK Kang, SJ Lee, JW Jeong</p>
-                                <p class="venue">IBPSA</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2018</div>
-                            <div class="pub-content">
-                                <h4>Empirical Study on The Heat Exchange Effectiveness of A Cross-flow Thermoelectric
-                                    Air To Air Heat Pump Unit</h4>
-                                <p class="authors">SY Cheon, JW Jeong</p>
-                                <p class="venue">2018 Purdue Conference Proceedings, 1-8</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2018</div>
-                            <div class="pub-content">
-                                <h4>Energy Saving Potential of a Dedicated Outdoor Air System with Desiccant Wheel
-                                    Assisted by Thermoelectric Modules</h4>
-                                <p class="authors">SY Cheon, JW Jeong</p>
-                                <p class="venue">Proceedings of Roomvent and Ventilation 2018 Track 6, 959-964</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2018</div>
-                            <div class="pub-content">
-                                <h4>Energy Performance Of Thermoelectric Ceiling Radiant Panels With A Dedicated Outdoor
-                                    Air System In High-Speed Train Cabins</h4>
-                                <p class="authors">H Lim, HJ Cho, SY Cheon, SJ Lee, JW Jeong</p>
-                                <p class="venue">ASIM 2018 Conference Proceeding, 1-8</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2018</div>
-                            <div class="pub-content">
-                                <h4>Energy Benefit Of Thermoelectric Module In A Dedicated Outdoor Air System With
-                                    Desiccant Wheel</h4>
-                                <p class="authors">SY Cheon, HW Dong, YK Kang, BJ Kim, JW Jeong</p>
-                                <p class="venue">ASIM 2018 Conference Proceeding, 1-8</p>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-year">2017</div>
-                            <div class="pub-content">
-                                <h4>Microorganism contaminants removal in a liquid desiccant dehumidification system
-                                </h4>
-                                <p class="authors">JY Park, EJ Choi, SY Cheon, HW Dong, JW Jeong</p>
-                                <p class="venue">Proceedings of 2017 AIVC Conference, 622-629</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="show-more-container">
-                        <button id="show-more-conferences-btn" class="btn btn-secondary">Show More Conferences <i
-                                class="fas fa-chevron-down"></i></button>
                     </div>
                 </div>
+                <div class="show-more-container">
+                    <button id="show-more-conf-btn" class="btn btn-secondary">Show More Proceedings <i
+                            class="fas fa-chevron-down"></i></button>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Team -->
+    <!-- Team Section -->
     <section id="team" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Our Team</h2>
-            <div class="team-grid" style="grid-template-columns: 1fr; max-width: 400px; margin: 0 auto;">
+            <div class="team-grid">
+                <!-- PI -->
                 <div class="team-member">
-                    <div class="member-img">
-                        <img src="profile.jpg" alt="Seong-Yong Cheon"
-                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
+                    <img src="profile.jpg" alt="Seong-Yong Cheon" class="member-img">
                     <h3>Seong-Yong Cheon</h3>
-                    <p class="role">Research Assistant Professor</p>
+                    <p class="role">Principal Investigator</p>
+                    <p>Research Assistant Professor</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
@@ -554,7 +366,7 @@
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Department of Architectural Engineering<br>Hanyang University, Seoul, South Korea</p>
+                        <p>Hanyang University, Seoul, South Korea</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
@@ -564,16 +376,17 @@
                 <form class="contact-form">
                     <input type="text" placeholder="Name" required>
                     <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <textarea rows="5" placeholder="Message" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 SBS Lab. All rights reserved.</p>
+            <p>&copy; 2024 SBS Lab. All rights reserved.</p>
         </div>
     </footer>
 
